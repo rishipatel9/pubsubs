@@ -23,8 +23,8 @@ const createConnection = () => __awaiter(void 0, void 0, void 0, function* () {
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
     createConnection();
     try {
-        yield redis.subscribe('user2', (message) => {
-            console.log('Message : ', message);
+        yield redis.subscribe("user1", (message) => {
+            console.log("Message : ", message);
         });
     }
     catch (e) {
